@@ -212,7 +212,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   margin: 1rem 0;
   outline: 0;
   text-align: center;
@@ -278,6 +278,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 1vw;
   }
 }
 
@@ -305,6 +306,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 1rem 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -679,6 +681,7 @@ a {
 .nav__item > a {
   color: #d2d0db;
   transition: color 0.3s;
+  font-size: 1.5rem;
 }
 
 .nav__item > a:hover {
@@ -699,6 +702,10 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
+}
+
+.nav__brand img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -743,6 +750,14 @@ a {
 }
 
 /* Domain Block */
+.block__header h2 {
+  font-size: 4rem;
+}
+
+.block__header p {
+  font-size: 2rem;
+}
+
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
@@ -751,8 +766,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -765,14 +781,6 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .input-group {
-    display: grid;
-    grid-template-columns: 1fr;
-    box-shadow: none;
   }
 }
 
